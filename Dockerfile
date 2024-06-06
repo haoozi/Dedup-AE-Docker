@@ -12,7 +12,7 @@ RUN apt-get update \
     && dpkg-reconfigure --frontend noninteractive tzdata \
     && apt-get install -y \
     build-essential git flex bison help2man perl device-tree-compiler \
-    python3-matplotlib unzip autoconf wget \
+    python3-matplotlib python3-psutil time unzip autoconf wget \
     openjdk-17-jdk-headless sudo \
     apt-transport-https curl gnupg \
     && echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" > /etc/apt/sources.list.d/sbt.list \
